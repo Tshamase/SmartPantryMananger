@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pantry List"
+
+        />
+    <item android:title="Add/Edit Ingredient" android:icon="@drawable/baseline_menu_24" />
+
+    <item android:title="Suggested Recipes"/>
+    <item android:title="Recipe Detail Screen" />
+</menu>

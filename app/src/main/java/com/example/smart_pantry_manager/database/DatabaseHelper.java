@@ -1,5 +1,15 @@
 package com.example.smart_pantry_manager.database;
 
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.example.smart_pantry_manager.models.PantryItem;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "smart_pantry.db";
     private static final int DB_VERSION = 1;

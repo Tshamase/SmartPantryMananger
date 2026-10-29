@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="porcelain">#F5F3EF</color>
+    <color name="porcelain_white">#FFFFFF</color>
+    <color name="porcelain_grey">#E8E5DF</color>
+    <color name="muted_blue">#8FAFC3</color>
+    <color name="primary_blue">#527D98</color>
+    <color name="charcoal">#292D32</color>
+    <color name="secondary_text">#73777C</color>
+    <color name="border">#DDDAD4</color>
+    <color name="success">#438568</color>
+    <color name="error">#C45454</color>
 </resources>

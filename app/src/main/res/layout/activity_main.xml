@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent">
-
-        </FrameLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/porcelain" android:padding="20dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="SMART PANTRY" android:textColor="@color/primary_blue" android:textStyle="bold" android:textSize="12sp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Make more of what you have." android:textColor="@color/charcoal" android:textSize="28sp"
+        android:textStyle="bold" android:layout_marginTop="8dp" />
+    <TextView android:id="@+id/dashboardIntro" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Reduce food waste, one meal at a time." android:textColor="@color/secondary_text"
+        android:textSize="15sp" android:layout_marginTop="8dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="24dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1"
+            android:orientation="vertical" android:padding="16dp" android:background="@drawable/card_background">
+            <TextView android:text="PANTRY ITEMS" android:textSize="11sp" android:textColor="@color/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/itemCount" android:text="0" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="100dp" android:layout_weight="1"
+            android:orientation="vertical" android:padding="16dp" android:background="@drawable/card_background">
+            <TextView android:text="COOKABLE RECIPES" android:textSize="11sp" android:textColor="@color/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/recipeCount" android:text="0" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/expirySummary" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Your pantry is ready when you are." android:textColor="@color/secondary_text"
+        android:layout_marginTop="18dp" android:padding="14dp" android:background="@drawable/card_background"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Let's get cooking"
+        android:textColor="@color/charcoal" android:textStyle="bold" android:textSize="20sp" android:layout_marginTop="28dp"/>
+    <Button android:id="@+id/openPantry" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="View my pantry" android:textAllCaps="false" android:layout_marginTop="12dp"/>
+    <Button android:id="@+id/openRecipes" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Find recipes" android:textAllCaps="false"/>
+    <Button android:id="@+id/openSettings" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Settings" android:textAllCaps="false" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+</LinearLayout>

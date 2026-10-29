@@ -1,0 +1,15 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:padding="16dp" android:layout_marginBottom="12dp" android:background="@drawable/card_background">
+    <TextView android:id="@+id/recipeCuisine" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="SOUTH AFRICAN" android:textColor="@color/primary_blue" android:textSize="11sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/recipeName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Recipe name" android:textColor="@color/charcoal" android:textSize="19sp" android:textStyle="bold" android:layout_marginTop="4dp"/>
+    <TextView android:id="@+id/recipeDescription" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Description" android:textColor="@color/secondary_text" android:textSize="14sp" android:layout_marginTop="4dp"/>
+    <TextView android:id="@+id/recipeTime" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="25 minutes · 2 servings" android:textColor="@color/secondary_text" android:textSize="12sp" android:layout_marginTop="8dp"/>
+    <Button android:id="@+id/viewRecipe" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="View recipe" android:textAllCaps="false" android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/porcelain" android:padding="20dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Settings"
+        android:textColor="@color/charcoal" android:textSize="28sp" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Personalise your pantry experience." android:textColor="@color/secondary_text" android:layout_marginTop="8dp"/>
+    <Switch android:id="@+id/expiryAlertsSwitch" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Show expiring-soon alerts" android:textColor="@color/charcoal" android:layout_marginTop="24dp" android:padding="12dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Smart Pantry Manager\nVersion 1.0\n\nYour pantry is stored locally on this device. Recipe suggestions require every listed ingredient in sufficient quantity."
+        android:textColor="@color/secondary_text" android:background="@drawable/card_background" android:padding="16dp" android:layout_marginTop="24dp" android:lineSpacingExtra="5dp"/>
+    <Button android:id="@+id/backHome" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back to home" android:textAllCaps="false" android:layout_marginTop="24dp"/>
+</LinearLayout>

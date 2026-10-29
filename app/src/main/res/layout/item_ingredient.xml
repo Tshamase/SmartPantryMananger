@@ -1,0 +1,16 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="14dp" android:layout_marginBottom="10dp"
+    android:background="@drawable/card_background">
+    <TextView android:id="@+id/ingredientName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Ingredient" android:textSize="17sp" android:textStyle="bold" android:textColor="@color/charcoal"/>
+    <TextView android:id="@+id/ingredientMeta" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="2 pieces" android:textSize="14sp" android:textColor="@color/secondary_text" android:layout_marginTop="4dp"/>
+    <TextView android:id="@+id/ingredientExpiry" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="" android:textSize="12sp" android:textColor="@color/error" android:layout_marginTop="3dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="end">
+        <Button android:id="@+id/editIngredient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit" android:textAllCaps="false" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        <Button android:id="@+id/deleteIngredient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" android:textAllCaps="false" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+    </LinearLayout>
+</LinearLayout>

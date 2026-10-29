@@ -1,0 +1,15 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/porcelain">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <Button android:id="@+id/backButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="← Back" android:textAllCaps="false" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        <TextView android:id="@+id/detailCuisine" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CUISINE" android:textColor="@color/primary_blue" android:textStyle="bold" android:textSize="12sp" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/detailName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Recipe name" android:textColor="@color/charcoal" android:textStyle="bold" android:textSize="29sp" android:layout_marginTop="4dp"/>
+        <TextView android:id="@+id/detailDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Description" android:textColor="@color/secondary_text" android:textSize="15sp" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/detailMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Prep time · servings" android:textColor="@color/secondary_text" android:layout_marginTop="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ingredients" android:textColor="@color/charcoal" android:textStyle="bold" android:textSize="21sp" android:layout_marginTop="24dp"/>
+        <TextView android:id="@+id/detailIngredients" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/charcoal" android:textSize="15sp" android:lineSpacingExtra="5dp" android:layout_marginTop="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Method" android:textColor="@color/charcoal" android:textStyle="bold" android:textSize="21sp" android:layout_marginTop="24dp"/>
+        <TextView android:id="@+id/detailInstructions" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/charcoal" android:textSize="15sp" android:lineSpacingExtra="6dp" android:layout_marginTop="8dp" android:layout_marginBottom="24dp"/>
+    </LinearLayout>
+</ScrollView>

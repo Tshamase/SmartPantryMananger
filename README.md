@@ -66,7 +66,7 @@ Open a terminal or command prompt and navigate to the directory where you want t
 Run:
 
 ```bash
-git clone https://github.com/Tshamase/SmartPantryMananger
+git clone https://github.com/Tshamase/SmartPantryMananger/tree/main
 ```
 
 
